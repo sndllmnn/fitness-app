@@ -1,3 +1,5 @@
+/* from apollo tutorial setup */
+
 import {
     ApolloClient,
     InMemoryCache,
