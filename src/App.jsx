@@ -1,13 +1,18 @@
 import { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import GreetUser from "./components/dashboard/GreetUser";
+import WorkoutToday from "./components/dashboard/WorkoutToday";
+import ProgramOverview from "./components/dashboard/ProgramOverview";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const userName = 
-
   return (
-    <div className="App">
+    /* doesn't work yet */
+    <><GreetUser></GreetUser>
+      <WorkoutToday></WorkoutToday>
+      <ProgramOverview></ProgramOverview></>
+  )}
+    /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
@@ -42,8 +47,6 @@ function App() {
           </a>
         </p>
       </header>
-    </div>
-  );
-}
+    </div> */
 
 export default App;
