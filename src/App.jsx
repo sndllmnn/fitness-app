@@ -8,9 +8,11 @@ import ProgramOverview from "./components/dashboard/ProgramOverview";
 function App() {
   return (
     /* doesn't work yet */
-    <><GreetUser></GreetUser>
+    <div className="dashboard">
+    <GreetUser></GreetUser>
       <WorkoutToday></WorkoutToday>
-      <ProgramOverview></ProgramOverview></>
+      <ProgramOverview></ProgramOverview>
+      </div>
   )}
     /*<div className="App">
       <header className="App-header">

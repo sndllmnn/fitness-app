@@ -1,8 +1,14 @@
-/* import strechtingCaricature from "./stretchingCaricature.png'; */
+/* HOW TO import strechtingCaricature from "./stretchingCaricature.png'; */
 
-function GreetUser () {
-    <h1>Hi Name!</h1>
-    /*return <img src={strechtingCaricature} alt="caricature of a Black woman doing stretching" />; */
+const Username = () => {
+    Username = window.prompt('Wie heißt du?', 'Gib hier deinen Namen ein!');
+    Username = firstCapitalLetter+(Username.slice(1).toLowerCase());
+    console.log(Username);
 }
 
-export default GreetUser;
+const GreetUser = (Username) => {
+    <h1 className="h1 h1--dashboard text--dashboard">Hi Username!</h1>
+}
+
+
+/* ???? WANN? */
