@@ -1,8 +1,4 @@
 /* files from dashboard folder */
-
-.dashboard {
-  color: darkBlue;
-}
 .text--dashboard {
   color: white;
   font-weight: bold;
@@ -27,6 +23,12 @@
 .h3--dashboard {
   font-size: 1.125rem;
   line-height: 1.688rem;
+}
+
+.workoutOverview {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* end */

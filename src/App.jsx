@@ -1,4 +1,8 @@
+/* external imports */
 import { useState } from "react";
+
+/* internal imports */
+
 import logo from "./logo.svg";
 import "./App.css";
 import GreetUser from "./components/dashboard/GreetUser";
@@ -7,14 +11,20 @@ import ProgramOverview from "./components/dashboard/ProgramOverview";
 
 function App() {
   return (
-    /* doesn't work yet */
-    <div className="dashboard">
-    <GreetUser></GreetUser>
-      <WorkoutToday></WorkoutToday>
-      <ProgramOverview></ProgramOverview>
-      </div>
-  )}
-    /*<div className="App">
+    <>
+      <body className="bg-darkBlue">
+        <div className="dashboard">
+          <GreetUser username="Sina" />
+          <img src="./components/dashboard/StretchingCaricature.svg" alt="stretching caricature"/>
+        <WorkoutToday />
+        <ProgramOverview />
+
+        </div>
+      </body>
+    </>
+  );
+}
+/*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
