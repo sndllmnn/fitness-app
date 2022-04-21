@@ -1,7 +1,9 @@
 const ProgramOverview = () => 
-  <div>
-    <h3 className="h3 h3--dashboard text--dashboard">Tag 1</h3>
-    <h2 className="h2 h2--dashboard text--dashboard">time to move</h2>
+  <div className="programOverviewBox">
+    <h3 className="h3 h3--dashboard text--dashboard">Tag 2</h3>
+    <h2 className="h2 h2--dashboard text--dashboard">Titel des Programms</h2>
+    <p className="p p--dashboard text--dashboard">26 Min. · Beweglichkeit</p>
+
   </div>
 
 

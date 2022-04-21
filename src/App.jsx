@@ -12,10 +12,10 @@ import ProgramOverview from "./components/dashboard/ProgramOverview";
 function App() {
   return (
     <>
-      <body className="bg-darkBlue">
+      <body className="bg-darkBlue" style={{"height" : "100vh"}}>
         <div className="dashboard">
           <GreetUser username="Sina" />
-          <img src="./components/dashboard/StretchingCaricature.svg" alt="stretching caricature"/>
+          <img className="image--centered" src="./components/dashboard/dashboardImages/StretchingCaricature.svg" alt="stretching caricature"/>
         <WorkoutToday />
         <ProgramOverview />
 
@@ -24,7 +24,7 @@ function App() {
     </>
   );
 }
-/*<div className="App">
+/* <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="text-3xl font-bold underline">Hello world!</h1>

@@ -25,10 +25,27 @@
   line-height: 1.688rem;
 }
 
+.image--centered {
+  margin: auto;
+  width: 70vw;
+}
+
 .workoutOverview {
   width: 100vw;
   display: flex;
   justify-content: space-between;
+}
+
+.programOverviewBox {
+  justify-content: flex-end;
+  background: #3A4151;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  margin: auto;
+  padding: 1rem;
+  width: 90vw;
 }
 
 /* end */
