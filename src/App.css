@@ -5,28 +5,30 @@ a {
   font-size: 2rem;
 }
 
-.text--dashboard {
+.text__dashboard {
   color: white;
   font-weight: bold;
 }
 
-.p--dashboard {
+.p__dashboard {
   font-size: 0.75rem;
   line-height: 0.938rem;
   font-weight: normal;
 }
 
-.h1--dashboard {
+.h1__dashboard {
   font-size: 2.25rem;
   line-height: 3.375rem;
+  margin: auto auto auto 1rem;
 }
 
-.h2--dashboard {
+.h2__dashboard {
   font-size: 2.25rem;
   line-height: 3.375rem;
+
 }
 
-.h3--dashboard {
+.h3__dashboard {
   font-size: 1.125rem;
   line-height: 1.688rem;
 }
@@ -40,7 +42,7 @@ a {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-}
+} 
 
 .programOverviewBox {
   justify-content: flex-end;
@@ -69,7 +71,7 @@ a {
   width: 90vw;
 }
 
-/* .h2--exerciseOverview {
+/* .h2__exerciseOverview {
   background: linear-gradient(315deg, #FF99C4 0%, #FFD162 100%);
   border-radius: 1rem;
   color: white;

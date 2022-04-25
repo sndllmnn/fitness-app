@@ -5,7 +5,7 @@
 } */
 
 const GreetUser = ({username}) => 
-    <h1 className="h1 h1--dashboard text--dashboard">Hi {username}!</h1>
+    <h1 className="h1 h1__dashboard text__dashboard">Hi {username}!</h1>
 
 
 export default GreetUser; 
