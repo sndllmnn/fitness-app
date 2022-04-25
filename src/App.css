@@ -1,5 +1,10 @@
 /* files from dashboard folder */
 
+a {
+  color: red;
+  font-size: 2rem;
+}
+
 .text--dashboard {
   color: white;
   font-weight: bold;
@@ -39,7 +44,7 @@
 
 .programOverviewBox {
   justify-content: flex-end;
-  background: #3A4151;
+  background: #3a4151;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -50,6 +55,35 @@
 }
 
 /* end */
+
+/* exercise overview */
+
+.exerciseOverviewBox {
+  justify-content: flex-end;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  margin: auto;
+  padding: 1rem;
+  width: 90vw;
+}
+
+/* .h2--exerciseOverview {
+  background: linear-gradient(315deg, #FF99C4 0%, #FFD162 100%);
+  border-radius: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 30vh;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+  width: 90vw;
+} */
 
 .App {
   text-align: center;
