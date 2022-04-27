@@ -19,7 +19,7 @@ a {
 .h1__dashboard {
   font-size: 2.25rem;
   line-height: 3.375rem;
-  margin: auto auto auto 1rem;
+  margin: auto auto auto 2rem;
 }
 
 .h2__dashboard {
@@ -44,9 +44,8 @@ a {
   justify-content: space-between;
 } 
 
-.programOverviewBox {
+.currentProgram {
   justify-content: flex-end;
-  background: #3a4151;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -55,39 +54,29 @@ a {
   padding: 1rem;
   width: 90vw;
 }
-
 /* end */
 
 /* exercise overview */
 
-.exerciseOverviewBox {
-  justify-content: flex-end;
+.programOption {
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   height: 30vh;
-  margin: auto;
-  padding: 1rem;
+  justify-content: center;
+  margin: 2rem auto;
   width: 90vw;
 }
 
-/* .h2__exerciseOverview {
-  background: linear-gradient(315deg, #FF99C4 0%, #FFD162 100%);
-  border-radius: 1rem;
+
+.h2__exerciseOverview {
   color: white;
-  display: flex;
-  flex-direction: column;
   font-size: 1.5rem;
   font-weight: bold;
-  height: 30vh;
-  justify-content: center;
-  margin: 1rem auto;
-  padding: 1rem;
   text-align: center;
-  width: 90vw;
-} */
+}
 
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -128,4 +117,4 @@ a {
 
 button {
   font-size: calc(10px + 2vmin);
-}
+} */

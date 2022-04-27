@@ -1,5 +1,4 @@
-const { getFragmentQueryDocument } = require("@apollo/client/utilities");
-const { visitWithTypeInfo } = require("graphql");
+
 
 module.exports = {
   content: ["./src/index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
@@ -38,9 +37,9 @@ theme: {
         250: '15.625',
     }, 
 
-    fontFamily: {
-        poppins: ['Poppins'],
-    },
+    /*fontFamily: {
+        'sans': ['Poppins'],
+    },*/
 
     fontWeight: {
         normal: '400',
