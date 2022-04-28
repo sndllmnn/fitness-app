@@ -8,6 +8,7 @@ import GreetUser from "./components/dashboard/GreetUser";
 import WorkoutToday from "./components/dashboard/WorkoutToday";
 import CurrentProgram from "./components/dashboard/CurrentProgram";
 import ExerciseOverview from "./components/exerciseOverview/ExerciseOverview";
+import RoundBox from "./components/generalComponents/RoundBox";
 
 function App() {
   return (
@@ -21,18 +22,23 @@ function App() {
             alt="stretching caricature"
           />
           <WorkoutToday />
-          <CurrentProgram/>
+          <CurrentProgram />
         </div>
+
+        <RoundBox text="100 Push-Ups Challenge" color="red" />
         <div>
-          <h2 style={{ color: "white",
-          fontWeight: "bold",
-          fontSize: "1.5rem",
-          marginTop: "3rem",
-          marginBottom: "3rem",
-          marginLeft: "2rem" }}
-          
-          
-          >Browse</h2>
+          <h2
+            style={{
+              color: "white",
+              fontWeight: "bold",
+              fontSize: "1.5rem",
+              marginTop: "3rem",
+              marginBottom: "3rem",
+              marginLeft: "2rem",
+            }}
+          >
+            Browse
+          </h2>
           <div
             className="programOption"
             style={{
@@ -53,7 +59,8 @@ function App() {
           <div
             className="programOption"
             style={{
-              background: "linear-gradient(315deg, #3A4AE4 0%, #3B85E6 21.35%, #3EE4E8 73.44%, #3EF3E8 92.71%)",
+              background:
+                "linear-gradient(315deg, #3A4AE4 0%, #3B85E6 21.35%, #3EE4E8 73.44%, #3EF3E8 92.71%)",
             }}
           >
             <ExerciseOverview programName="Stretch and Relax" />
