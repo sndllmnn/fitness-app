@@ -1,7 +1,7 @@
 const RoundBox = ({text, color}) => (
   <div
     style={{
-      background: {color},
+      background: {color}, //not working
       borderRadius: "1rem",
       display: "flex",
       flexDirection: "column",
