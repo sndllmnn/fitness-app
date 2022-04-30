@@ -27,13 +27,34 @@ function ExerciseList() {
         >
           Browse
         </h2>
+
+        {/* FOR EACH FUNCTION?
+
+  import programs from "../../programs.json";
+
+   programs.forEach((program) => {
+     <div
+          className="programOption"
+          style={{
+            background: "linear-gradient(315deg, #FF99C4 0%, #FFD162 100%)",
+          }}
+        >
+
+          <ExerciseOption programName="program.title" />
+        </div>
+     });
+  
+  
+  
+  
+  */}
         <div
           className="programOption"
           style={{
             background: "linear-gradient(315deg, #FF99C4 0%, #FFD162 100%)",
           }}
         >
-          <ExerciseOption programName="100 Push-Ups Challenge" />
+          <ExerciseOption programName="program." />
         </div>
 
         <div

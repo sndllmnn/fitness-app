@@ -22,9 +22,12 @@ function App() {
             alt="stretching caricature"
           />
           <WorkoutToday />
-          <CurrentProgram />
+          <CurrentProgram 
+          />
         </div>
         <div>
+              
+
           <NavigationIcons />
         </div>
       </body>
