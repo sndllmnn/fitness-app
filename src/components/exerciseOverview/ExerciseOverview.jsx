@@ -42,7 +42,7 @@ function ExerciseList() {
             background: "linear-gradient(315deg, #F5FFA0 0%, #3EF3E8 100%)",
           }}
         >
-          <ExerciseOption programName="30 Min Yoga" />
+          <ExerciseOption programName="Yoga Journey" />
         </div>
         <div
           className="programOption"
@@ -60,7 +60,7 @@ function ExerciseList() {
             background: "linear-gradient(315deg, #FF99C4 0%, #FFD162 100%)",
           }}
         >
-          <ExerciseOption programName="20 Min Pilates" />
+          <ExerciseOption programName="Pilates Einführung" />
         </div>
         <div
           className="programOption"

@@ -1,0 +1,43 @@
+[
+    {
+      "id": "0",
+      "programTitle": "100 Push-Ups Challenge",
+      "programFocus": "KRAFT",
+      "programDifficulty": "LEICHT",
+      "programWeeks": "6 WOCHEN",
+      "programDays": 43,
+      // "url": "../subpages/productDetails1",
+      "programDescription": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen.",
+    },
+    {
+        "id": "1",
+        "programTitle": "Stretch and Relax",
+        "programFocus": "MOBILITÄT",
+        "programDifficulty": "MITTEL",
+        "programWeeks": "2 WOCHEN",
+        "programDays": 14,
+        // "url": "../subpages/productDetails1",
+        "programDescription": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen.",
+      },
+      {
+        "id": "2",
+        "programTitle": "Yoga Journey",
+        "programFocus": "KONZENTRATION",
+        "programDifficulty": "LEICHT",
+        "programWeeks": "1 WOCHE",
+        "programDays": 7,
+        // "url": "../subpages/productDetails1",
+        "programDescription": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen.",
+      },
+      {
+        "id": "3",
+        "programTitle": "Pilates Einführung",
+        "programFocus": "KRAFT",
+        "programDifficulty": "SCHWER",
+        "programWeeks": "3 WOCHEN",
+        "programDays": 21,
+       // "url": "../subpages/productDetails1",
+        "programDescription": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen.",
+      }
+  ]
+  
