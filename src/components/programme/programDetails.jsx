@@ -2,13 +2,20 @@
 import programs from "../../programs.json";
 import ProgramProperty from "./ProgramProperty";
 
-const programID = new URLSearchParams(window.location.search).get("id");
-const currentProgram = programs.filter(
-  (program) => program.id === programID
-)[0];
-
 const ProgramDetails = () => {
-  <div
+  const programID = new URLSearchParams(window.location.search).get("id");
+  const currentProgram = programs.filter(
+    (program) => program.id === programID
+  )[0];
+
+  const {
+    title,
+    properties,
+    description
+  } = currentProgram;
+
+  return (
+  <><div
     style={{
       background: "linear-gradient(315deg, #FF99C4 0%, #FFD162 100%)",
       height: "80vh",
@@ -23,7 +30,7 @@ const ProgramDetails = () => {
         textAlign: "center",
       }}
     >
-      {currentProgram.title}
+      {title}
     </h1>
     <div
       style={{
@@ -32,29 +39,28 @@ const ProgramDetails = () => {
         width: "90vw",
       }}
     >
-      <ProgramProperty property={currentProgram.focus} />
-      <ProgramProperty property={currentProgram.difficulty} />
-      <ProgramProperty property={currentProgram.weeks} />
+      <ProgramProperty type="focus" property={properties.focus} />
+      <ProgramProperty type="difficulty" property={properties.difficulty} />
+      <ProgramProperty type="weeks" property={properties.weeks} />
     </div>
-  </div>;
-
-  <div
+  </div><div
     style={{
       background: "#3A4151",
       height: "40vh",
     }}
   >
-    <p
-      style={{
-        color: "white",
-        fontSize: "1rem",
-        lineHeight: "1.313rem",
-        padding: "2rem",
-      }}
-    >
-      {currentProgram.description}
-    </p>
-  </div>;
+      <p
+        style={{
+          color: "white",
+          fontSize: "1rem",
+          lineHeight: "1.313rem",
+          padding: "2rem",
+        }}
+      >
+        {description}
+      </p>
+    </div></>
+    );
 };
 
 /* const ProgramDetails = ({ programName }) => (

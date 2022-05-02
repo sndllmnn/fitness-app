@@ -1,11 +1,12 @@
 import programs from "../../programs.json";
+import greyDot from "./programImages/greyDot.png";
 
 const programID = new URLSearchParams(window.location.search).get("id");
 const currentProgram = programs.filter(
   (program) => program.id === programID
 )[0];
 
-const ProgramProperty = ({ property }) => {
+const ProgramProperty = ({ property, type }) => 
   <div
     style={{
       display: "flex",
@@ -13,9 +14,9 @@ const ProgramProperty = ({ property }) => {
       justifyContent: "center",
     }}
   >
-    <img src="/programImages/greyDot.png" alt="grey dot" />
-    <p>{property}</p>
+    <img src={greyDot} alt="grey dot" />
+    {/* <p>{property}</p> {type === "weeks" && property > 1 ? <span>Wochen</span> : <span>Woche</span>} */}
   </div>;
-};
+;
 
 export default ProgramProperty;
