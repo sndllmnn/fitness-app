@@ -1,10 +1,9 @@
 // external imports
 
 import { useState } from "react";
+import NavigationIcons from "../generalComponents/Navigation/NavigationIcons"
 
-// internal imports
 
-import "./App.css";
 
 function ExerciseList() {
   const ExerciseOption = ({ programName }) => (
@@ -45,8 +44,6 @@ function ExerciseList() {
      });
   
   
-  
-  
   */}
         <div
           className="programOption"
@@ -54,7 +51,7 @@ function ExerciseList() {
             background: "linear-gradient(315deg, #FF99C4 0%, #FFD162 100%)",
           }}
         >
-          <ExerciseOption programName="program." />
+          <ExerciseOption programName="Warm-Up" />
         </div>
 
         <div
@@ -90,6 +87,9 @@ function ExerciseList() {
           }}
         >
           <ExerciseOption programName="don't do anything for 7 minutes" />
+        </div>
+        <div>
+          <NavigationIcons />
         </div>
       </body>
     </>

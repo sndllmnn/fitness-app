@@ -1,16 +1,34 @@
-/*const Username = () => {
-    Username = window.prompt('Wie heißt du?', 'Gib hier deinen Namen ein!');
-    Username = firstCapitalLetter+(Username.slice(1).toLowerCase());
-    console.log(Username);
-} 
-
-const GreetUser = ({username}) => 
-    <h1 className="h1 h1__dashboard text__dashboard">Hi {username}!</h1> */
+/* external imports */
+import React, { useState } from "react";
 
 function WelcomeScreen(props) {
+  const [username, setUsername] = useState(props.username);
+
+  const changeUsername = () => {
+    setUsername(prompt("Gib hier deinen Namen ein!"));
+  };
+
   return (
     <>
-      <h1 className="h1 h1__dashboard text__dashboard">Hi {props.username}!</h1>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <h1 className="h1__dashboard text__dashboard">Hi {username}!</h1>
+        <button
+          onClick={changeUsername}
+          style={{
+            background: "white",
+            height: "2.25rem",
+            marginLeft: "2rem",
+            marginRight: "2rem",
+          }}
+        >
+          Namen ändern!
+        </button>
+      </div>
       <img
         className="image--centered"
         src="./components/dashboard/dashboardImages/StretchingCaricature.svg"
@@ -19,22 +37,30 @@ function WelcomeScreen(props) {
 
       <div
         className="workoutOverview"
-        style={{ width: "100vw", justifyContent: "space-between" }}
+        style={{
+          alignItems: "center",
+          display: "flex",
+          width: "100vw",
+          justifyContent: "space-between",
+        }}
       >
+        }
         <h2
           className="h2__dashboard text__dashboard"
           style={{
-            alignItems: "baseline",
+            alignItems: "center",
             marginTop: "1rem",
             marginBottom: "1rem",
-            marginLeft: "2rem",
           }}
         >
           Dein Workout heute
         </h2>
         <p
           className="p__dashboard text__dashboard"
-          style={{ marginRight: "1rem", fontSize: "1.2rem", padding: "2.2rem" }}
+          style={{
+            fontSize: "1.2rem",
+            padding: "2.2rem",
+          }}
         >
           Trainingsplan
         </p>
