@@ -10,12 +10,14 @@ const NavigationIcons = () => (
       display: "flex",
       height: "10vh",
       justifyContent: "center",
-      position: "absolute",
+      position: "fixed",
       left: "0%",
       right: "0%",
-      bottom: "0%",
+      bottom: "0vh",
     }}
   >
+
+  {/* home icon */}
    <Link to="/"
       style={{
         marginRight: "30vw",
@@ -30,6 +32,7 @@ const NavigationIcons = () => (
       />
     </Link> 
 
+  {/* exercise overview icon */}
     <Link to="exerciseoverview"
       style={{
         paddingTop: "4vh",
@@ -40,7 +43,10 @@ const NavigationIcons = () => (
         alt="hanldebar icon"
       />
     </Link>
-    <a
+
+      {/* user profile icon */}
+
+    <Link to="userprofile"
       style={{
         marginLeft: "30vw",
         paddingTop: "4vh",
@@ -50,7 +56,7 @@ const NavigationIcons = () => (
         src="./components/generalComponents/Navigation/navigationIcons/userIcon.png"
         alt="user profile icon"
       />
-    </a>
+    </Link>
     ;
   </div>
 );

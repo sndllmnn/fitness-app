@@ -1,5 +1,9 @@
 /* files from dashboard folder */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 a {
   font-size: 2rem;

@@ -1,4 +1,5 @@
 /* external imports */
+import { visitWithTypeInfo } from "graphql";
 import React, { useState } from "react";
 
 function WelcomeScreen(props) {
@@ -17,10 +18,10 @@ function WelcomeScreen(props) {
         }}
       >
         <h1 className="h1__dashboard text__dashboard">Hi {username}!</h1>
+       
         <button
           onClick={changeUsername}
           style={{
-            background: "white",
             height: "2.25rem",
             marginLeft: "2rem",
             marginRight: "2rem",

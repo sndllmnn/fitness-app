@@ -31,6 +31,7 @@ import CurrentProgram from "./components/dashboard/CurrentProgram";
 import NavigationIcons from "./components/generalComponents/Navigation/NavigationIcons";
 import ProgramDetails from "./components/programs/ProgramDetails";
 import ExerciseList from "./components/exerciseOverview/ExerciseOverview";
+import UserProfile from "./components/profile/UserProfile";
 
 function App() {
   /* const { loading, error, data } = useQuery(GET_WORKOUTS);
@@ -42,12 +43,12 @@ function App() {
 
   return (
     <>
-      {/* <p><Link to="/ExerciseOverview">TEST LINK</Link></p> */}
 
       <body style={{ height: "100vh", background: "#202430" }}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="exerciseoverview" element={<ExerciseList />} />
+          <Route path="userprofile" element={<UserProfile />} />
         </Routes>
       </body>
     </>

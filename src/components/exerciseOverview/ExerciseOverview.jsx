@@ -1,9 +1,9 @@
 // external imports
 
-import { useState } from "react";
-import NavigationIcons from "../generalComponents/Navigation/NavigationIcons"
+import NavigationIcons from "../generalComponents/Navigation/NavigationIcons";
 
-
+// internal imports
+import UserProfile from "../profile/UserProfile";
 
 function ExerciseList() {
   const ExerciseOption = ({ programName }) => (
@@ -13,40 +13,25 @@ function ExerciseList() {
   );
   return (
     <>
-      <body style={{ height: "100%", background: "#202430" }}>
-        <h2
-          style={{
-            color: "white",
-            fontWeight: "bold",
-            fontSize: "1.5rem",
-            marginTop: "3rem",
-            marginBottom: "3rem",
-            marginLeft: "2rem",
-          }}
-        >
-          Browse
-        </h2>
+      <h2
+        style={{
+          color: "white",
+          fontWeight: "bold",
+          fontSize: "1.5rem",
+          marginLeft: "2rem",
+        }}
+      >
+        Browse
+      </h2>
 
-        {/* FOR EACH FUNCTION?
-
-  import programs from "../../programs.json";
-
-   programs.forEach((program) => {
-     <div
-          className="programOption"
-          style={{
-            background: "linear-gradient(315deg, #FF99C4 0%, #FFD162 100%)",
-          }}
-        >
-
-          <ExerciseOption programName="program.title" />
-        </div>
-     });
-  
-  
-  */}
+      {/* kompletter Hintergrund dunkelblau */}
+      <div
+        style={{
+          background: "rgb(32, 36, 48)",
+        }}
+      >
         <div
-          className="programOption"
+          className="programOption bg-grOrange "
           style={{
             background: "linear-gradient(315deg, #FF99C4 0%, #FFD162 100%)",
           }}
@@ -63,7 +48,7 @@ function ExerciseList() {
           <ExerciseOption programName="Yoga Journey" />
         </div>
         <div
-          className="programOption"
+          className="programOption    "
           style={{
             background:
               "linear-gradient(315deg, #3A4AE4 0%, #3B85E6 21.35%, #3EE4E8 73.44%, #3EF3E8 92.71%)",
@@ -81,17 +66,28 @@ function ExerciseList() {
           <ExerciseOption programName="Pilates Einführung" />
         </div>
         <div
-          className="programOption"
+          /* className="pb-100" doesn't work */
           style={{
-            background: "linear-gradient(315deg, #F5FFA0 0%, #3EF3E8 100%)",
+            paddingBottom: "5rem",
           }}
         >
-          <ExerciseOption programName="don't do anything for 7 minutes" />
+          <div
+            className="programOption"
+            style={{
+              background: "linear-gradient(315deg, #F5FFA0 0%, #3EF3E8 100%)",
+            }}
+          >
+            <ExerciseOption programName="don't do anything for 7 minutes" />
+          </div>
         </div>
         <div>
-          <NavigationIcons />
+          <NavigationIcons
+            style={{
+              position: "fixed",
+            }}
+          />
         </div>
-      </body>
+      </div>
     </>
   );
 }
